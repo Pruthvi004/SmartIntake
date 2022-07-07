@@ -1,0 +1,11 @@
+<project name="ExportImport" basedir="." default="exportprops">
+    <target name="exportprops">
+        <property environment="env"/>
+        <delete file="${env.PEGA_HOME}\scripts\utils\${env.SystemName}_export.properties" />
+        <propertyfile file="${env.PEGA_HOME}\scripts\utils\${env.SystemName}_export.properties">
+            
+        </propertyfile>
+
+        
+    </target>
+</project>
